@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A6C52D4-4FEB-48BB-9C4F-A9758DBE2E8E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>supermarket_mene</RootNamespace>
+    <AssemblyName>supermarket_mene</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>..\..\..\Bunifu.UI.WinForms.1.5.3\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ASDCat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASDCat.Designer.cs">
+      <DependentUpon>ASDCat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillTbl.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BillTbl.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CATEGORYFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CATEGORYFORM.Designer.cs">
+      <DependentUpon>CATEGORYFORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryTbl.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CategoryTbl.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FilteringProduct.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FilteringProduct.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FilteringSeller.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FilteringSeller.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formItemSell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formItemSell.Designer.cs">
+      <DependentUpon>formItemSell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="itemlocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="itemlocation.Designer.cs">
+      <DependentUpon>itemlocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemSell.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ItemSell.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductForm.Designer.cs">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductTbl.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductTbl.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportShowBillTbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportShowBillTbl.Designer.cs">
+      <DependentUpon>ReportShowBillTbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportShowCategoryTbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportShowCategoryTbl.Designer.cs">
+      <DependentUpon>ReportShowCategoryTbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportShowItemSell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportShowItemSell.Designer.cs">
+      <DependentUpon>reportShowItemSell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportShowProductTbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportShowProductTbl.Designer.cs">
+      <DependentUpon>ReportShowProductTbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportShowSellerTbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportShowSellerTbl.Designer.cs">
+      <DependentUpon>ReportShowSellerTbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SellerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellerForm.Designer.cs">
+      <DependentUpon>SellerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SellerTbl.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SellerTbl.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SellingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellingForm.Designer.cs">
+      <DependentUpon>SellingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="showfilteringitemsell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showfilteringitemsell.Designer.cs">
+      <DependentUpon>showfilteringitemsell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowFilteringProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowFilteringProduct.Designer.cs">
+      <DependentUpon>ShowFilteringProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="showFIlteringSeller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showFIlteringSeller.Designer.cs">
+      <DependentUpon>showFIlteringSeller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="utama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="utama.Designer.cs">
+      <DependentUpon>utama.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ASDCat.resx">
+      <DependentUpon>ASDCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillTbl.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BillTbl.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CATEGORYFORM.resx">
+      <DependentUpon>CATEGORYFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryTbl.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CategoryTbl.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilteringProduct.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FilteringProduct.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilteringSeller.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FilteringSeller.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formItemSell.resx">
+      <DependentUpon>formItemSell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="itemlocation.resx">
+      <DependentUpon>itemlocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemSell.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ItemSell.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductForm.resx">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductTbl.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProductTbl.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportShowBillTbl.resx">
+      <DependentUpon>ReportShowBillTbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportShowCategoryTbl.resx">
+      <DependentUpon>ReportShowCategoryTbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportShowItemSell.resx">
+      <DependentUpon>reportShowItemSell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportShowProductTbl.resx">
+      <DependentUpon>ReportShowProductTbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportShowSellerTbl.resx">
+      <DependentUpon>ReportShowSellerTbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellerForm.resx">
+      <DependentUpon>SellerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellerTbl.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SellerTbl.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellingForm.resx">
+      <DependentUpon>SellingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showfilteringitemsell.resx">
+      <DependentUpon>showfilteringitemsell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowFilteringProduct.resx">
+      <DependentUpon>ShowFilteringProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showFIlteringSeller.resx">
+      <DependentUpon>showFIlteringSeller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="utama.resx">
+      <DependentUpon>utama.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\market_real-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seller.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seller2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\category.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reject %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSell.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
